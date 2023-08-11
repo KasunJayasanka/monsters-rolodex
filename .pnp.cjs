@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:13.5.0"],\
+            ["eslint-config-react", "npm:1.1.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:18.2.0"],\
             ["react-scripts", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:5.0.1"],\
@@ -8404,6 +8405,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["eslint-config-react", [\
+        ["npm:1.1.7", {\
+          "packageLocation": "./.yarn/cache/eslint-config-react-npm-1.1.7-6e3860b2e1-15d3d7f78e.zip/node_modules/eslint-config-react/",\
+          "packageDependencies": [\
+            ["eslint-config-react", "npm:1.1.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["eslint-config-react-app", [\
         ["npm:7.0.1", {\
           "packageLocation": "./.yarn/cache/eslint-config-react-app-npm-7.0.1-78bab43841-a67e082180.zip/node_modules/eslint-config-react-app/",\
@@ -12237,6 +12247,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.17.0"],\
             ["@testing-library/react", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:13.5.0"],\
+            ["eslint-config-react", "npm:1.1.7"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:18.2.0"],\
             ["react-scripts", "virtual:aa89d1ba9b09b824260dab89b00f6054fc36269aba58e0e25f9a84a0467ff658abab8a2f5898ecfcf104a52fe70fc9cdc9e5a06eda9c66cc32bdad619643335e#npm:5.0.1"],\
