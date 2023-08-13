@@ -2,13 +2,12 @@ import { Component } from "react";
 
 class CardList extends Component{
 
-    
-
     render(){
 
+        console.log('render');
         const {monsters}=this.props;
-        console.log(this.props);
-        
+        //console.log(this.props);
+
         return(
         <div>      
         {monsters.map((monster)=>{
