@@ -11,18 +11,18 @@ class App extends Component {
      
       ]
     };
-    console.log(1);
+    console.log('constructor');
   }
 
   componentDidMount(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response=>response.json())
     .then(users=>this.setState({monsters:users}));
-    console.log(3);
+    console.log('componentDidMount');
   }
 
   render() {
-    console.log(2);
+    console.log('render');
     return (
       <div className="App">
        <h1>{this.state.monsters.map((monster)=>{
