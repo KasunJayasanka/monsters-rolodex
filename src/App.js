@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CardList from './components/card-list/card-list.component';
 
 class App extends Component {
 
@@ -70,6 +71,7 @@ class App extends Component {
           return <div key={monster.id}><h1>{monster.name}</h1></div>
        })}
        </h1>
+       <CardList/>
       </div>
     );
   }
