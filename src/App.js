@@ -1,4 +1,5 @@
-import React,{ Component } from 'react';
+// import React,{ Component } from 'react';
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CardList from './components/card-list/card-list.component';
@@ -6,17 +7,24 @@ import SearchBox from './components/search-box/search-box.component';
 
 const App = ()=>{
 
+  const [searchField,setsearchField] = useState('');
+
+  const onSearchChange = (event)=>{
+    const searchFieldString = event.target.value.toLocaleLowerCase();
+    setsearchField(searchFieldString);
+  }
+
   return(
     <div className="App">
 
       <h1 className='app-title'>Monsters Rolodex</h1>
 
-       {/*<SearchBox 
+      <SearchBox 
        onChangeHandler={onSearchChange} 
        placeholder='search monsters' 
        className='monsters-search-box'
        />
-  <CardList monsters={filteredMonsters}/>*/}
+  {/*<CardList monsters={filteredMonsters}/>*/}
 
     </div>
   );
