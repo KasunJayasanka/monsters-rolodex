@@ -1,11 +1,19 @@
-import { Component } from "react";
+// import { Component } from "react";
 import './card-container.styles.css';
 
-class CardContainer extends Component{
+// const CardContainer =({monster})=>{
 
-    render(){
-        
-        const {name,email,id}=this.props.monster;
+//     <div className="card-container" key={id}>
+//         <img alt={`monster ${name}`} src={`https://robohash.org/${id}?set=set1&size=180x180`}></img>
+//             <h2>{name}</h2>
+//             <p>{email}</p>
+//     </div>
+                
+// }
+
+
+const CardContainer =({monster:{name,email,id}})=>{
+        // const {name,email,id}=monster;
 
         return(
             <div className="card-container" key={id}>
@@ -15,7 +23,6 @@ class CardContainer extends Component{
             </div>
         );
         
-    }
 }
 
 export default CardContainer;
