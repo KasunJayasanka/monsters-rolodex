@@ -9,17 +9,28 @@ const App = ()=>{
 
   const [searchField,setsearchField] = useState('');
   const [monsters,setMonsters] = useState([]);
+  const [filteredMonsters,setFilteredMonsters] = useState(monsters);
 
   console.log({searchField});
 
- 
-  fetch('https://jsonplaceholder.typicode.com/users')
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(response=>response.json())
     .then((users)=>setMonsters(users));
+  },
+    []
+  );
 
-  const filteredMonsters = monsters.filter((monster)=>{
-    return monster.name.toLocaleLowerCase().includes(searchField);
-  });
+  useEffect(()=>{
+    const newFilteredMonsters = monsters.filter((monster)=>{
+      return monster.name.toLocaleLowerCase().includes(searchField);
+    });
+
+    setFilteredMonsters(newFilteredMonsters);
+    },
+    [monsters,searchField]
+  );
+  
 
   const onSearchChange = (event)=>{
     const searchFieldString = event.target.value.toLocaleLowerCase();
