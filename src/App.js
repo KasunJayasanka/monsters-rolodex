@@ -42,7 +42,7 @@ const App = ()=>{
        className='monsters-search-box'
        />
 
-     
+       <CardList monsters={filteredMonsters}/>
 
     </div>
   );
